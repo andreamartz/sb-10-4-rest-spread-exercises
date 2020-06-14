@@ -76,7 +76,9 @@ const doubleAndReturnArgs2 = (arr, ...args) => [
 // Make sure that you are always returning a new array or object
 // and not modifying the existing inputs.
 
+// *************
 // removeRandom
+// *************
 /** remove a random element in the items array
 and return a new array without that item. */
 
@@ -90,28 +92,38 @@ function removeRandom(items) {
 }
 // console.log(removeRandom([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]));
 
+// *************
 // extend
+// *************
 /** Return a new array with every item in array1 and array2. */
 
 function extend(array1, array2) {}
 
+// *************
 // addKeyVal
+// *************
 /** Return a new object with all the keys and values
 from obj and a new key/value pair */
 
 function addKeyVal(obj, key, val) {}
 
+// *************
 // removeKey
+// *************
 /** Return a new object with a key removed. */
 
 function removeKey(obj, key) {}
 
+// *************
 // combine
+// *************
 /** Combine two objects and return a new object. */
 
 function combine(obj1, obj2) {}
 
+// *************
 // update
+// *************
 /** Return a new object with a modified key and value. */
 
 function update(obj, key, val) {}
