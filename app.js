@@ -139,7 +139,10 @@ const removeKey = (obj, key) => {
 // *************
 /** Combine two objects and return a new object. */
 
-function combine(obj1, obj2) {}
+const combine = (obj1, obj2) => ({ ...obj1, ...obj2 });
+// const tea = { type: "oolong", name: "winter sprout", origin: "taiwan" };
+// const teaData = { steepTime: "30s", brewTemp: 175 };
+// console.log(combine(tea, teaData));
 
 // *************
 // update
