@@ -44,3 +44,26 @@ const findMin2 = (...nums) => Math.min(...nums);
 
 const mergeObjects = (obj1, obj2) => ({ ...obj1, ...obj2 });
 // console.log(mergeObjects({ a: 1, b: 2 }, { c: 3, d: 4 }));
+
+// **********************************************************************
+// doubleAndReturnArgs
+// Write a function called doubleAndReturnArgs which accepts an array and
+// a variable number of arguments. The function should return a new array
+// with the original array values and all of additional arguments doubled.
+
+const doubleAndReturnArgs = (arr, ...args) => {
+  const doubleArgs = args.map((arg) => arg * 2);
+  return [...arr, ...doubleArgs];
+};
+
+// or even
+
+const doubleAndReturnArgs2 = (arr, ...args) => [
+  ...arr,
+  ...args.map((arg) => arg * 2),
+];
+
+// console.log(doubleAndReturnArgs([1, 2, 3], 4, 4)); // [1,2,3,8,8]
+// console.log(doubleAndReturnArgs([2], 10, 4)); // [2, 20, 8]
+// console.log(doubleAndReturnArgs2([1, 2, 3], 4, 4)); // [1,2,3,8,8]
+// console.log(doubleAndReturnArgs2([2], 10, 4)); // [2, 20, 8]
