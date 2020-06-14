@@ -67,3 +67,51 @@ const doubleAndReturnArgs2 = (arr, ...args) => [
 // console.log(doubleAndReturnArgs([2], 10, 4)); // [2, 20, 8]
 // console.log(doubleAndReturnArgs2([1, 2, 3], 4, 4)); // [1,2,3,8,8]
 // console.log(doubleAndReturnArgs2([2], 10, 4)); // [2, 20, 8]
+
+// **********************************************************************
+// Slice and Dice!
+// For this section, write the following functions using rest, spread
+// and refactor these functions to be arrow functions!
+
+// Make sure that you are always returning a new array or object
+// and not modifying the existing inputs.
+
+// removeRandom
+/** remove a random element in the items array
+and return a new array without that item. */
+
+function removeRandom(items) {
+  // generate a random index number
+  const idx = Math.floor(Math.random() * items.length);
+  console.log("index: ", idx);
+
+  // slice or splice the array
+  return [...items.slice(0, idx), ...items.slice(idx + 1)];
+}
+// console.log(removeRandom([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]));
+
+// extend
+/** Return a new array with every item in array1 and array2. */
+
+function extend(array1, array2) {}
+
+// addKeyVal
+/** Return a new object with all the keys and values
+from obj and a new key/value pair */
+
+function addKeyVal(obj, key, val) {}
+
+// removeKey
+/** Return a new object with a key removed. */
+
+function removeKey(obj, key) {}
+
+// combine
+/** Combine two objects and return a new object. */
+
+function combine(obj1, obj2) {}
+
+// update
+/** Return a new object with a modified key and value. */
+
+function update(obj, key, val) {}
