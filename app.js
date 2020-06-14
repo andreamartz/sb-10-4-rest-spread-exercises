@@ -13,3 +13,6 @@ function filterOutOdds2(...nums) {
 // or
 
 const filterOutOdds3 = (...nums) => nums.filter((num) => num % 2 === 0);
+
+// console.log("evens2: ", filterOutOdds2(56, 4, 5, 6, 7, 103, 167, 4, 22));
+// console.log("evens3: ", filterOutOdds3(56, 4, 5, 6, 7, 103, 167, 4, 22));
