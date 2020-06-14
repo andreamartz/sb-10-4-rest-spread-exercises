@@ -149,4 +149,14 @@ const combine = (obj1, obj2) => ({ ...obj1, ...obj2 });
 // *************
 /** Return a new object with a modified key and value. */
 
-function update(obj, key, val) {}
+const update = (obj, key, val) => {
+  const newObj = { ...obj };
+  newObj[key] = val;
+  return newObj;
+};
+// const tea = { type: "oolong", name: "winter sprout", origin: "taiwan" };
+// console.log(update(tea, "name", "fancy name"));
+
+// Note from solution:
+// OPTION 2 this uses an object enhancement you'll see in the next unit)
+// return { ...obj, [key]: val };
