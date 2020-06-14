@@ -82,14 +82,11 @@ const doubleAndReturnArgs2 = (arr, ...args) => [
 /** remove a random element in the items array
 and return a new array without that item. */
 
-function removeRandom(items) {
+const removeRandom = (items) => {
   // generate a random index number
   const idx = Math.floor(Math.random() * items.length);
-  console.log("index: ", idx);
-
-  // slice or splice the array
   return [...items.slice(0, idx), ...items.slice(idx + 1)];
-}
+};
 // console.log(removeRandom([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]));
 
 // *************
@@ -97,7 +94,9 @@ function removeRandom(items) {
 // *************
 /** Return a new array with every item in array1 and array2. */
 
-function extend(array1, array2) {}
+const extend = (array1, array2) => [...array1, ...array2];
+
+console.log(extend(["a", "b", "c"], [1, 3, 5]));
 
 // *************
 // addKeyVal
