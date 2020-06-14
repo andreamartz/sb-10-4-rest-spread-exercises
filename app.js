@@ -96,7 +96,7 @@ const removeRandom = (items) => {
 
 const extend = (array1, array2) => [...array1, ...array2];
 
-console.log(extend(["a", "b", "c"], [1, 3, 5]));
+// console.log(extend(["a", "b", "c"], [1, 3, 5]));
 
 // *************
 // addKeyVal
@@ -104,7 +104,17 @@ console.log(extend(["a", "b", "c"], [1, 3, 5]));
 /** Return a new object with all the keys and values
 from obj and a new key/value pair */
 
-function addKeyVal(obj, key, val) {}
+const tea = { type: "oolong", name: "winter sprout", origin: "taiwan" };
+const addKeyVal = (obj, key, val) => {
+  const newObj = { ...obj };
+  newObj[key] = val;
+  return newObj;
+};
+// Note from the solution:
+// OPTION 2 (uses an object enhancement you'll see in the next unit)
+// return { ...obj, [key]: val };
+
+//console.log("new obj: ", addKeyVal(tea, "price", 22.99));
 
 // *************
 // removeKey
