@@ -104,7 +104,7 @@ const extend = (array1, array2) => [...array1, ...array2];
 /** Return a new object with all the keys and values
 from obj and a new key/value pair */
 
-const tea = { type: "oolong", name: "winter sprout", origin: "taiwan" };
+// const tea = { type: "oolong", name: "winter sprout", origin: "taiwan" };
 const addKeyVal = (obj, key, val) => {
   const newObj = { ...obj };
   newObj[key] = val;
@@ -121,7 +121,18 @@ const addKeyVal = (obj, key, val) => {
 // *************
 /** Return a new object with a key removed. */
 
-function removeKey(obj, key) {}
+const removeKey = (obj, key) => {
+  const newObj = { ...obj };
+  delete newObj[key];
+  return newObj;
+};
+// Note from the solution:
+// OPTION 2 (uses an object enhancement you'll see in the next unit)
+// ({ [key]: undefined, ...obj } = obj);
+// return obj;
+
+// const tea = { type: "oolong", name: "winter sprout", origin: "taiwan" };
+// console.log(removeKey(tea, "type"));
 
 // *************
 // combine
